@@ -19,6 +19,11 @@ class CampaignAdmin extends Admin
         return parent::isGranted($name, $object);
     }
 
+    public function getBatchActions()
+    {
+        return null;
+    }
+
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
